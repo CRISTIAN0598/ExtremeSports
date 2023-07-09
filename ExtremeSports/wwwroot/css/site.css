@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #F5E429;
+    --ligh_bg_yellow: #f5e42993;
     --secodary-color: #080808;
     --seconday-dark-colot: #453c5c;
     --white-color: #ffffff;
@@ -226,6 +227,10 @@ B. Header Nav
     padding: 0.25em;
     margin-right: 0.5em;
 }
+
+    .trigger span {
+        color: var(--white-color);
+    }
 
 .logo a {
     font-family: 'Poppins';
@@ -510,7 +515,7 @@ E.Responsive MENU - Off Canvas
     position: fixed;
     width: 320px;
     height: var(--percent100);
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     overflow-y: auto;
     z-index: 1000;
     transform: translateX(-100%);
@@ -537,7 +542,7 @@ E.Responsive MENU - Off Canvas
         justify-content: space-between;
         padding: 1.5em;
         margin: -1.5em -1.5em 1.5em;
-        background-color: var(--seconday-dark-colot);
+        background-color: var(--dark-color);
         border-bottom-right-radius: 160px 25px;
     }
 
@@ -555,8 +560,8 @@ E.Responsive MENU - Off Canvas
     width: 32px;
     height: 32px;
     border-radius: var(--percent50);
-    background-color: var(--seconday-dark-colot);
-    color: var(--white-color);
+    background-color: var(--primary-color);
+    color: var(--dark-color);
     transition: var(--trans-background-color);
 }
 
@@ -571,7 +576,8 @@ E.Responsive MENU - Off Canvas
     padding: 1em;
     margin-bottom: 1em;
     text-align: center;
-    background-color: var(--light_bg_color);
+    background-color: var(--ligh_bg_yellow);
+    color: var(--light_bg_color);
     border-radius: 7px 7px 0 0;
 }
 
@@ -1270,7 +1276,7 @@ C.Footer Info
         width: 16px;
         border-radius: var(--percent50);
         margin-right: -20px;
-        background-color: var(--seconday-dark-colot);
+        background-color: var(--primary-color);
     }
 
 /*06.Bottom Menu
@@ -1281,7 +1287,7 @@ A.Search
     bottom: 60px;
     width: var(--percent100);
     padding: 2.5em 0;
-    background-color: var(--seconday-dark-colot);
+    background-color: var(--dark-color);
     z-index: 4;
     visibility: hidden;
     opacity: 0;
